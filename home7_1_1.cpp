@@ -6,7 +6,7 @@ using namespace std;
 
 bool checkNumber(int);
 
-int main (void){
+int main (){
 	int userNumber;
 	cout<<"Enter number: ";
 	cin>>userNumber;
