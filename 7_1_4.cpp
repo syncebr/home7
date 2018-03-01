@@ -4,7 +4,7 @@
 
 using namespace std;
 
-double largerOf(double &,double &);
+void largerOf(double &,double &);
 
 int main() {
 	double numb1,numb2;
@@ -12,20 +12,16 @@ int main() {
 	cin>>numb1;
 	cout << "Enter number 2:";
 	cin>>numb2;
-	cout<<"The biggest one is: "<<largerOf(numb1,numb2);
-	cout<<endl<<numb1<<endl<<numb2;
+	largerOf(numb1,numb2);
+	cout<<"The biggest one is: "<<numb1;
 	return 0;
 
 }
 
-double largerOf(double &numb1,double &numb2)
+void largerOf(double &numb1,double &numb2)
 {
-	if(numb1>numb2) {
+	if(numb1>numb2)
 		numb2=numb1;
-		return numb1;
-	}
-	else {
+	else
 		numb1=numb2;
-		return numb2;
-	}
 }
