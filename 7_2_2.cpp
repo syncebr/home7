@@ -34,26 +34,26 @@ int main() {
 	if (findLastPos(arr,N)==0) cout<<"Нету положительных!"<<endl;
 	else {
 		ptrPos=findLastPos(arr,N);
-		cout<<*ptrPos<<endl;
+		cout<<"Последний положительный: "<<*ptrPos<<endl;
 	}
 	if(findFirstNeg(arr,N)==0) cout<<"Нету отридцательных!"<<endl;
 	else {
 		ptrNeg=findFirstNeg(arr,N);
-		cout<<*ptrNeg<<endl;
+		cout<<"Первый отридцательный: "<<*ptrNeg<<endl;
 	}
 
 	int tmpNum1, tmpNum2;
 	bool flag=false;
 	while (!flag){
-	cout<<"Введите номер первого элемента для замены(нумерация массива начинается с 0): ";
+	cout<<"Введите номер первого элемента для замены(нумерация массива начинается с 1): ";
 	cin>>tmpNum1;
-	if(tmpNum1<N && tmpNum1>=0) flag=true;
+	if(tmpNum1<=N && tmpNum1>0) flag=true;
 	}
 	flag=false;
 	while (!flag){
-		cout<<"Введите номер первого элемента для замены(нумерация массива начинается с 0): ";
+		cout<<"Введите номер второго элемента для замены(нумерация массива начинается с 1): ";
 		cin>>tmpNum2;
-		if(tmpNum2<N && tmpNum2>=0) flag=true;
+		if(tmpNum2<=N && tmpNum2>0) flag=true;
 		}
 	tmpNum1--;
 	tmpNum2--;
