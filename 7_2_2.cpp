@@ -31,12 +31,12 @@ int main() {
 	printArr(arr,N);
 	int *ptrPos;
 	int *ptrNeg;
-	if (findLastPos(arr,N)==0) cout<<"Нету положительных!"<<endl;
+	if (!(findLastPos(arr,N))) cout<<"Нету положительных!"<<endl;
 	else {
 		ptrPos=findLastPos(arr,N);
 		cout<<"Последний положительный: "<<*ptrPos<<endl;
 	}
-	if(findFirstNeg(arr,N)==0) cout<<"Нету отридцательных!"<<endl;
+	if(!(findFirstNeg(arr,N))) cout<<"Нету отридцательных!"<<endl;
 	else {
 		ptrNeg=findFirstNeg(arr,N);
 		cout<<"Первый отридцательный: "<<*ptrNeg<<endl;
@@ -89,7 +89,7 @@ void generateArr(int arr[], int size) {
 		ptrArr++;
 	}
 }
-//вывод на консоль двумерного массива
+//вывод на консоль массива
 void printArr(int arr[], int size) {
 	int *ptrArr = arr;
 	if (size == 0) cout << "массив пуст";
