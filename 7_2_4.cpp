@@ -72,6 +72,4 @@ void reverseSign(float arr[],int size, int col, int num){
 		*ptrArr-=2*(*ptrArr);
 		ptrArr+=col;
 	}
-
-
 }
