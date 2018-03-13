@@ -3,6 +3,19 @@
 Пример: ввод: 5 1 вывод: 5 4 3 2 1.*/
 #include <iostream>
 using namespace std;
+void output(int, int);
+
+void main() {
+	int num1, num2;
+	cout << "Input A :";
+	cin >> num1;
+	cout << " Input B :";
+	cin >> num2;
+	output(num1, num2);
+	cout << endl;
+	system("pause");
+}
+
 void output(int a, int b) {
 	if (a == b) {
 		cout << "\t" << b;
@@ -16,14 +29,4 @@ void output(int a, int b) {
 		cout << "\t" << a--;
 		output(a, b);
 	}
-}
-void main() {
-	int num1, num2;
-	cout << "Input A :";
-	cin >> num1;
-	cout << " Input B :";
-	cin >> num2;
-	output(num1, num2);
-	cout << endl;
-	system("pause");
 }
